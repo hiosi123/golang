@@ -2,6 +2,7 @@ package makeString
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -47,5 +48,32 @@ func MakeString() {
 
 func StringBuilder() {
 	var sb strings.Builder
+	fmt.Println("this is the string builder:", sb.String())
+	fmt.Println(sb.Cap())
+	fmt.Println(sb.Len())
+
+	sb.WriteString("Hellooooo")
+	fmt.Println("this is the string builder:", sb.String())
+	fmt.Println(sb.Cap())
+	fmt.Println(sb.Len())
+
+	sb.Grow(100)
+	fmt.Println(sb.Cap())
+
+	sb.Reset()
+
 	fmt.Println(sb.String())
+
+	sb.Write([]byte{65, 65, 65})
+	fmt.Println(sb.String())
+
+	x := 123
+	y := strconv.Itoa(x)
+
+	fmt.Println(y)
+	fmt.Printf("%T\n", y)
+
+	z, _ := strconv.Atoi(y)
+	fmt.Println(z)
+	fmt.Printf("%T\n", z)
 }
