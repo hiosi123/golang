@@ -1,10 +1,10 @@
 package main
 
-import "dojo/makeString"
+import "dojo/constant"
 
 func main() {
 
-	makeString.StringBuilder()
+	constant.Constant()
 
 	//hello
 }
