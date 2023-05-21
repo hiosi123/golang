@@ -1,7 +1,7 @@
 package main
 
-import loop "dojo/loops"
+import "dojo/arrays"
 
 func main() {
-	loop.Loop()
+	arrays.Array()
 }
