@@ -12,6 +12,9 @@ func Constant() {
 	const five int = 5
 	fmt.Println(five)
 
+	var seven = 7
+	fmt.Println(seven)
+
 	var six int = 6
 	fmt.Println(six)
 
