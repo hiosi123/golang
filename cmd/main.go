@@ -1,7 +1,7 @@
 package main
 
-import "dojo/arrays"
+import "dojo/redis"
 
 func main() {
-	arrays.Array()
+	redis.ConnectRedis()
 }
