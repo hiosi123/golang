@@ -1,7 +1,7 @@
 package main
 
-import "dojo/redis"
+import text "dojo/golang_text_template"
 
 func main() {
-	redis.ConnectRedis()
+	text.MakeText()
 }

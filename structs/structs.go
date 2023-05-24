@@ -21,20 +21,20 @@ func StructPrep() {
 
 	type Dojo struct {
 		Name  string
-		Ninja *Ninja
+		Ninja Ninja
 	}
 
 	golangDojo := Dojo{
 		Name:  "golang dojo",
-		Ninja: &wallace,
+		Ninja: wallace,
 	}
 
 	// fmt.Println(golangDojo)
 	// fmt.Println(golangDojo.Ninja.Name)
 	golangDojo.Ninja.Level = 3
 
-	// fmt.Println(golangDojo.Ninja.Level)
-	// fmt.Println(wallace)
+	fmt.Println(golangDojo.Ninja.Level)
+	fmt.Println(golangDojo.Ninja.Name)
 
 	jonnyPointer := new(Ninja)
 	// fmt.Println(jonnyPointer)
@@ -46,19 +46,19 @@ func StructPrep() {
 	wallace.Level = 12
 	// fmt.Println(wallace)
 
-	golangDojo1 := Dojo{
-		Name:  "golang Dojo2",
-		Ninja: jonnyPointer,
-	}
+	// golangDojo1 := Dojo{
+	// 	Name:  "golang Dojo2",
+	// 	Ninja: jonnyPointer,
+	// }
 
-	golangDojo1.Ninja.Name = "hello"
-	fmt.Println(golangDojo1.Ninja)
+	// golangDojo1.Ninja.Name = "hello"
+	// fmt.Println(golangDojo1.Ninja)
 
-	intern := ninjaIntern{
-		name:  "intern",
-		level: 1,
-	}
-	intern.sayHello()
+	// intern := ninjaIntern{
+	// 	name:  "intern",
+	// 	level: 1,
+	// }
+	// intern.sayHello()
 }
 
 type ninjaIntern struct {
