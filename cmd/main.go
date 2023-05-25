@@ -1,7 +1,9 @@
 package main
 
-import text "dojo/golang_text_template"
+import (
+	design "dojo/golangDesign"
+)
 
 func main() {
-	text.MakeText()
+	design.DesignPattern()
 }
