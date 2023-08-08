@@ -18,6 +18,10 @@ func Constant() {
 	var six int = 6
 	fmt.Println(six)
 
+	var integer1, interger2 = 1, "string"
+
+	fmt.Println(integer1, interger2)
+
 	six = 10
 	fmt.Println(six)
 
