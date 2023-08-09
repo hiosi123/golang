@@ -31,10 +31,26 @@ func (l *LinkedList) Add(value int) {
 }
 
 func (l *LinkedList) Remove(value int) {
+	var previous *Node
+
+	for current := l.Head; current != nil; current = current.Next {
+		if l.Head == current {
+			l.Head = current.Next
+		} else {
+			previous.Next = current.Next
+			return
+		}
+		previous = current
+	}
 
 }
 
 func (l LinkedList) Get(value int) *Node {
+	for iterator := l.Head; iterator != nil; iterator = iterator.Next {
+		if iterator.Value == value {
+			return iterator
+		}
+	}
 	return nil
 }
 
