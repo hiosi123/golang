@@ -1,4 +1,4 @@
-package main
+package binarySearch
 
 import (
 	"fmt"
@@ -19,6 +19,7 @@ type bst struct {
 
 //BST String()
 //In order traversal
+
 // left itself right
 
 func (n node) String() string {
@@ -42,17 +43,4 @@ func (b bst) inOrderTraversalByNode(sb *strings.Builder, root *node) {
 	b.inOrderTraversalByNode(sb, root.left)
 	sb.WriteString(fmt.Sprintf("%s", root))
 	b.inOrderTraversalByNode(sb, root.right)
-}
-
-func main() {
-	n := &node{1, nil, nil}
-	n.left = &node{0, nil, nil}
-	n.right = &node{2, nil, nil}
-
-	b := bst{
-		root: n,
-		len:  3,
-	}
-
-	fmt.Println(b)
 }
