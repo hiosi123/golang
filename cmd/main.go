@@ -1,9 +1,9 @@
 package main
 
 import (
-	"dojo/interfaces"
+	bubblesort "dojo/bubbleSort"
 )
 
 func main() {
-	interfaces.Makefile()
+	bubblesort.MakeBubbileSort()
 }
