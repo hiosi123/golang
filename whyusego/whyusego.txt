@@ -1,0 +1,13 @@
+1. net/http package, very concise implementation
+
+2. go is a programming language with simplicity 
+
+3. code base developed using golang, easy to maintain than many other popular programming language. strict formatting, 
+
+4. ease of deployment. can be compiled down to one binary file
+
+5. speed, lightening fast, cuncurrency support, efficiently, thrid party integration. aws, gcp, azure, docker, kubernetes. golang
+
+6. alternative to current options
+
+7. compiled statical type.

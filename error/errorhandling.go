@@ -2,7 +2,6 @@ package error
 
 import (
 	"context"
-	"log"
 	"time"
 )
 
@@ -16,8 +15,8 @@ func main() {
 }
 
 func someApiCall(ctx context.Context) {
-	err := someUncertainOperation()
-	if err != nil {
-		log.Fatalf("failed for requestId={%s} and error = {%s}", ctx.Value("requestId"), err)
-	}
+	// err := someUncertainOperation()
+	// if err != nil {
+	// 	log.Fatalf("failed for requestId={%s} and error = {%s}", ctx.Value("requestId"), err)
+	// }
 }
