@@ -51,8 +51,6 @@ func TypeAssertion() {
 		}
 	}
 
-	waitGroup := make(chan, 5 )
-
 	go func() {
 		fmt.Println("asd")
 	}()

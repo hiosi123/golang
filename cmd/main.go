@@ -1,7 +1,9 @@
 package main
 
-import "dojo/typeAssertion"
+import (
+	"dojo/interfaces"
+)
 
 func main() {
-	typeAssertion.TypeAssertion()
+	interfaces.Makefile()
 }
