@@ -26,7 +26,7 @@ func htmlVsPlain(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("htmlVsPlain")
 	w.Header().Set("Content-Type", "text/html") // implicitly set to html tag
 	fmt.Fprint(w, "<h1>Hello World!</h1>")
-	r.Body
+
 }
 
 func timeout(w http.ResponseWriter, r *http.Request) {
